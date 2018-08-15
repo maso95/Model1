@@ -5,7 +5,9 @@ import com.company.client.ClientType;
 public class Starbucks implements CoffeeType {
 
 
-    public void sellCoffe(ClientType [] clientType) {
+    public void sellCoffee(ClientType [] clientType) {
+        CoffeeMachine bar =new CoffeeMachine(5,5,5,5);
+                if(bar.ifCoffeeReady(clientType))
         for (ClientType c : clientType) {
             if (enoughMoney(c)) {
                 System.out.println("Order: " + c.getPreferences() + " is ready "

@@ -5,4 +5,6 @@ public interface CoffeeType {
    int CAPPUCCINO = 18;
    int BLACKCOFFEE = 25;
    int AMERICANO = 15;
+
+
 }
